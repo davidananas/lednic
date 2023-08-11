@@ -7,6 +7,7 @@ input.onButtonPressed(Button.B, function () {
 let display = 0
 let alarm = 0
 display = 0
+input.calibrateCompass()
 basic.forever(function () {
     while (display == 0) {
         basic.showNumber(input.compassHeading())
