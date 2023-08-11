@@ -12,7 +12,7 @@ basic.forever(function () {
     while (display == 0) {
         basic.showNumber(input.compassHeading())
     }
-    if (250 <= input.compassHeading()) {
+    if (150 >= input.compassHeading()) {
         alarm = 1
         while (alarm == 1) {
             music.play(music.createSoundExpression(WaveShape.Sine, 1, 4729, 0, 253, 500, SoundExpressionEffect.None, InterpolationCurve.Linear), music.PlaybackMode.UntilDone)
